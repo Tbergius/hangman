@@ -35,6 +35,16 @@ def get_user_input(guessed_letters):
             return guess
         print("Invalid input. Please enter a single letter that you did not guess before.")
 
+def display_instructions():
+    """
+    Displays instructions for the Hangman game.
+    """
+    print("Welcome to Hangman!")
+    print("Guess the word letter by letter, no numbers or full words allowed.")
+    print("You have only 7 incorrect guesses.")
+    print("Correct guesses will not remove a guess.")
+    print("Best of luck!\n")
+
 def play_game():
     """
     Runs the Hangman game. 
@@ -43,8 +53,8 @@ def play_game():
     word = random.choice(words)
     guessed_letters = set()
     incorrect_guesses = set()
-    max_attempts = 2
-    print("Welcome to Hangman!")
+    max_attempts = 7
+    display_instructions()
     print(f"The word has {len(word)} letters.")
     display_word(word, guessed_letters)
 
