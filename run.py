@@ -35,7 +35,8 @@ def main():
     Main function to start the Hangman game.
     Select a random word.
     Display the word state.
-    Track the guesses from player. Add number of attempts (8 now, can change)
+    Track the guesses from player. Add number of attempts (8 now, can change).
+    Check the win conditions
     """
     words = load_words()
     word = random.choice(words)
@@ -44,7 +45,7 @@ def main():
     max_attempts = 8
     print("Welcome to Hangman!")
     print(f"The word has {len(word)} letters.")
-    display_word(word,guessed_letters)
+    display_word(word, guessed_letters)
 
     while len(incorrect_guesses) < max_attempts:
         guess = get_user_input(guessed_letters | incorrect_guesses)
@@ -55,6 +56,11 @@ def main():
         display_word(word, guessed_letters)
         print(f"Incorrect guesses: {', '.join(incorrect_guesses)}")
         print(f"Attempts remaining: {max_attempts - len(incorrect_guesses)}\n")
+
+    if set(word).issubset(guessed_letters):
+        print(f"Congrats! You guessed the word: {word}")
+    else:
+        print(f"Games over :( The word was: {word})")
 
     while True:
         guess = get_user_input(guessed_letters)
