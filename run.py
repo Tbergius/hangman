@@ -1,5 +1,6 @@
 import random
 
+
 def load_words(filename="words.txt"):
     """
     Loads a list of words for the Hangman game from a file.
@@ -11,15 +12,18 @@ def load_words(filename="words.txt"):
     with open(filename, 'r') as file:
         return [line.strip() for line in file]
 
+
 def display_word(word, guessed_letters):
     """
-    Show the current state of the word with guessed letters and underscores for missing letters.
+    Show the current state of the word with guessed letters and underscores
+    for missing letters.
     Args:
         word (str): The word to guess.
         guessed_letters (set): The set of letters that have been guessed.
     """
     display = [letter if letter in guessed_letters else '_' for letter in word]
     print(' '.join(display))
+
 
 def get_user_input(guessed_letters):
     """
@@ -31,9 +35,11 @@ def get_user_input(guessed_letters):
     """
     while True:
         guess = input("Guess a letter: ").lower()
-        if len(guess) == 1 and guess.isalpha() and guess not in guessed_letters:
+        if len(guess) == 1 and guess.isalpha() and guess not in
+        guessed_letters:
             return guess
-        print("Invalid input. Please enter a single letter that you did not guess before.")
+        print("Invalid input. Please enter a not used before single letter.")
+
 
 def display_instructions():
     """
@@ -45,9 +51,10 @@ def display_instructions():
     print("Correct guesses will not remove a guess.")
     print("Best of luck!\n")
 
+
 def play_game():
     """
-    Runs the Hangman game. 
+    Runs the Hangman game.
     """
     words = load_words()
     word = random.choice(words)
@@ -58,7 +65,8 @@ def play_game():
     print(f"The word has {len(word)} letters.")
     display_word(word, guessed_letters)
 
-    while len(incorrect_guesses) < max_attempts and not set(word).issubset(guessed_letters):
+    while len(incorrect_guesses) < max_attempts
+    and not set(word).issubset(guessed_letters):
         guess = get_user_input(guessed_letters | incorrect_guesses)
         if guess in word:
             guessed_letters.add(guess)
@@ -73,6 +81,7 @@ def play_game():
     else:
         print(f"Game over :( The word was: {word}\n")
 
+
 def main():
     """
     Main function to run the Hangman game and allow replay.
@@ -81,10 +90,11 @@ def main():
         try:
             play_game()
         except FileNotFoundError:
-            print("Word list not found. Please make sure 'words.txt' is in the same directory.")
+            print("Wordlist missing. Ensure 'words.txt' is in same directory.")
             break
         if input("Play again? (y/n): ").lower() != 'y':
             break
+
 
 if __name__ == "__main__":
     main()
