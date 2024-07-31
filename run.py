@@ -37,9 +37,7 @@ def get_user_input(guessed_letters):
 
 def play_game():
     """
-    Main function to start the Hangman game. This includes:
-        Prompting a random word, display word state, track player guesses, 
-        checking win conditions
+    Runs the Hangman game. 
     """
     words = load_words()
     word = random.choice(words)
@@ -70,7 +68,11 @@ def main():
     Main function to run the Hangman game and allow replay.
     """
     while True:
-        play_game()
+        try:
+            play_game()
+        except FileNotFoundError:
+            print("Word list not found. Please make sure 'words.txt' is in the same directory.")
+            break
         if input("Play again? (y/n): ").lower() != 'y':
             break
 
