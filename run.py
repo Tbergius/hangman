@@ -47,7 +47,7 @@ def main():
     print(f"The word has {len(word)} letters.")
     display_word(word, guessed_letters)
 
-    while len(incorrect_guesses) < max_attempts:
+    while len(incorrect_guesses) < max_attempts and not set(word).issubset(guessed_letters):
         guess = get_user_input(guessed_letters | incorrect_guesses)
         if guess in word:
             guessed_letters.add(guess)
@@ -60,7 +60,7 @@ def main():
     if set(word).issubset(guessed_letters):
         print(f"Congrats! You guessed the word: {word}")
     else:
-        print(f"Games over :( The word was: {word})")
+        print(f"Game over :( The word was: {word})")
 
     while True:
         guess = get_user_input(guessed_letters)
