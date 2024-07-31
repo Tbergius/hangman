@@ -36,37 +36,43 @@ def main():
     Select a random word.
     Display the word state.
     Track the guesses from player. Add number of attempts (8 now, can change).
-    Check the win conditions
+    Check the win conditions.
+    Added reply option.
     """
-    words = load_words()
-    word = random.choice(words)
-    guessed_letters = set()
-    incorrect_guesses = set()
-    max_attempts = 8
-    print("Welcome to Hangman!")
-    print(f"The word has {len(word)} letters.")
-    display_word(word, guessed_letters)
-
-    while len(incorrect_guesses) < max_attempts and not set(word).issubset(guessed_letters):
-        guess = get_user_input(guessed_letters | incorrect_guesses)
-        if guess in word:
-            guessed_letters.add(guess)
-        else:
-            incorrect_guesses.add(guess)
+    while True:
+        words = load_words()
+        word = random.choice(words)
+        guessed_letters = set()
+        incorrect_guesses = set()
+        max_attempts = 2
+        print("Welcome to Hangman!")
+        print(f"The word has {len(word)} letters.")
         display_word(word, guessed_letters)
-        print(f"Incorrect guesses: {', '.join(incorrect_guesses)}")
-        print(f"Attempts remaining: {max_attempts - len(incorrect_guesses)}\n")
 
-    if set(word).issubset(guessed_letters):
-        print(f"Congrats! You guessed the word: {word}")
-    else:
-        print(f"Game over :( The word was: {word})")
+        while len(incorrect_guesses) < max_attempts and not set(word).issubset(guessed_letters):
+            guess = get_user_input(guessed_letters | incorrect_guesses)
+            if guess in word:
+                guessed_letters.add(guess)
+            else:
+                incorrect_guesses.add(guess)
+            display_word(word, guessed_letters)
+            print(f"Incorrect guesses: {', '.join(incorrect_guesses)}")
+            print(f"Attempts remaining: {max_attempts - len(incorrect_guesses)}\n")
 
+        if set(word).issubset(guessed_letters):
+            print(f"Congrats! You guessed the word: {word}")
+        else:
+            print(f"Game over :( The word was: {word})")
+            
+        if input("Play again? (y/n): ").lower() != 'y':
+            break
+
+"""
     while True:
         guess = get_user_input(guessed_letters)
         guessed_letters.add(guess)
         display_word(word, guessed_letters)
-
+"""
 
 if __name__ == "__main__":
     main()
