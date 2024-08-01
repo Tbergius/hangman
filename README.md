@@ -4,45 +4,48 @@
 Thank you for viewing my third project from the Full Stack Developer course. This time I will take you along Hangman, a command line based game created with Python.
 This README will give you some more insights on my journey.
 - You can find the live link here: [https://tbergius-hangman-219834a76c84.herokuapp.com/](https://tbergius-hangman-219834a76c84.herokuapp.com/)
-## Hangman Idea
+## 1. Purpose of the project
 For this project I wanted to create a game, and I picked a word guessing game as it came close to something else I am learning: a new language. Not coding, but the Bulgarian language. As I am far from speaking it, I made it English only. 
-
-## Hangman Game Development
-To create a fun and engaging Hangman game, I divided the project into several stages: 
-1. Discovery
-2. Planning
-3. Development
-4. Testing
-5. Deployment
-Each stage helped ensure the game was user-friendly and enjoyable.
-### 1. Discovery Phase
-### My Goals:
-- Make the game easy to use and understand.
-- Ensure instructions and messages are clear.
-- Create a positive experience for players.
-- Keep game feedback relevant and helpful.
-- Design a logical game flow that is accessible and simple.
-### User Objectives:
+## 2. User stories:
 ### New players:
-- Understand the game's purpose and rules quickly.
-- Navigate the game easily.
-- Feel a sense of achievement while playing.
+- As a new player, I want to understand the game's purpose and rules quickly.
+- As a new player, I want to navigate the game easily.
+- As a new player, I want to feel a sense of achievement while playing.
 ### Returning players:
-- Easily follow the game information.
-- Interact with the game without issues.
-- Guess (new) words faster. 
-### 2. Planning
-- Plan the basic logic of the Hangman game.
-- Outline the structure of the Python code needed for the game.
-- Create a rough blueprint for the logic:
-- ![Flow Chart](https://github.com/Tbergius/hangman/blob/main/assets/hangman_bp.png)
-### 3. Development Phase
-A detailed plan was created to guide the game's development. Adjustments were made to improve user experience and address any issues. Every step was tested to be sure it was working, before resuming with the next stage. During working on this, the blueprint was adjusted and refined as well. The code was written in Gitpod on the base of the Code Institude template.
-### 4. Testing
-In addition to the above testing while coding, every game step was tested once deployed. Wrong replies were given, such as numbers, multiple letters, words, gibberish. 
-The code was checked via the online PEP8 checker from Code Institude. During the test a heap of inconsitansies such as no double line breaks, and user text that extends the broder of the terminal was found, and adjusted.
-Also ran it through ExtendsClass Python syntax checker for syntax errors, this came back all good.
+- As a returning player, I want to easily follow the game information.
+- As a returning player, I want to interact with the game without issues.
+- As a returning player, I want to guess (new) words with fewer guesses.
 
+## 3. Features
+- **Welcome Message:** Introduces the game and explains the rules.
+- **Word Display:** Shows the word with guessed letters and underscores for missing ones.
+- **Player's Guess:** Prompts the player to guess a letter and checks the input.
+- **Feedback:** Provides feedback on guessed letters and remaining attempts.
+- **Game Over Messages:** Displays a message when the player wins or loses.
+
+## 4. Future Features
+
+- Add graphics or ASCII art for visual enhancement.
+- Introduce a multiplayer option to play against another player.
+- Include game statistics and leaderboards for player progression and achievements.
+
+## 5. Blueprint
+
+A detailed plan was created to guide the game's development. Adjustments were made to improve user experience and address any issues. Every step was tested to ensure it was working before moving on to the next stage. The blueprint was refined during development.
+
+- ![Flow Chart](https://github.com/Tbergius/hangman/blob/main/assets/hangman_bp.png)
+
+## 6. Technology
+- [**GitHub**](https://github.com/) - For version control and code repository
+- [**Gitpod**](https://gitpod.io/) - For writing the code
+- [**Code Institude template**](https://github.com/Code-Institute-Org/python-essentials-template)- To start with the base of writing the code and have the basic programs and files
+- [**Python**](https://en.wikipedia.org/wiki/Python_(programming_language)) - The programming language of this project
+- [**Heroku**](https://www.heroku.com/) - To deploy the working program
+- [**Code Institude PEP8 validator**](https://pep8ci.herokuapp.com/) - To check python code and deployability on Heroku
+- [**ExtendsClass Python syntax check**](https://extendsclass.com/python-tester.html) - To check the Python code syntax (Python 3), and find Python errors
+
+## 8. Testing
+Testing was done throughout coding of the project. Wrong replies were given, such as numbers, multiple letters, words, gibberish. 
 Examples of testing during coding:
 - Line 31, the leading " was at the wrong spot, it should have been after the opening (. This was fixed
 ![Error comma image](https://github.com/Tbergius/hangman/blob/main/assets/wrong_place_comma.png)
@@ -50,14 +53,21 @@ Examples of testing during coding:
 - Writing by hand, instead of copying, can result in code not working. Such a using display_word instead of display_words
 ![Typo image](https://github.com/Tbergius/hangman/blob/main/assets/typo_words.png)
 
+### 8.1 Test cases
+
+
+### 8.2 Code Validation
+The code was checked via the online PEP8 checker from Code Institude. During the test a heap of inconsitansies such as no double line breaks, and user text that extends the broder of the terminal was found, and adjusted.
+Also ran it through ExtendsClass Python syntax checker for syntax errors, this came back all good.
+
 - PEP8 Python Validator Results
 ![PEP8 Python Validator results](https://github.com/Tbergius/hangman/blob/main/assets/ci_pep.png)
 
-2. ExtendsClass Python syntax checker
+- ExtendsClass Python syntax checker
 ![ExtendsClass Python syntax checker results](https://github.com/Tbergius/hangman/blob/main/assets/extendsclass.png)
 
 
-### 5. Deployment
+### 9. Deployment
 For the coding in Gitpod, and hosting on Heroku
 ### To load the project in Gitpod, please follow these steps:
 
@@ -76,12 +86,4 @@ For the coding in Gitpod, and hosting on Heroku
 - In the config var settings: set the KEY to PORT, and the Value to 8000
 - Manually deploy the Main branch, launch the application
 
-## Credits
-### Tools used:
-[**GitHub**](https://github.com/) - for pushing the code
-[**Gitpod**](https://gitpod.io/) - for writing the code
-[**Code Institude template**](https://github.com/Code-Institute-Org/python-essentials-template)- To start with the base of writing the code and have the basic programs and files
-[**Python**](https://en.wikipedia.org/wiki/Python_(programming_language)) - the language of this project
-[**Heroku**](https://www.heroku.com/) - to deploy the working program
-[**Code Institude PEP8 validator**](https://pep8ci.herokuapp.com/) - check python code and deployability on Heroku
-[**ExtendsClass Python syntax check**](https://extendsclass.com/python-tester.html) - check the Python code syntax (Python 3), and find Python errors
+## 10. Credits
