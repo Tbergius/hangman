@@ -8,8 +8,14 @@ You can find the live link here:
 For this project I wanted to create a game, and I picked a word guessing game as it came close to something else I am learning: a new language. Not coding, but the Bulgarian language. As I am far from speaking it, I made it English only. 
 
 ## Hangman Game Development
-To create a fun and engaging Hangman game, I divided the project into several stages: Discovery, Planning, Development, Testing, and Deployment. Each stage helped ensure the game was user-friendly and enjoyable.
-### Discovery Phase
+To create a fun and engaging Hangman game, I divided the project into several stages: 
+1. Discovery
+2. Planning
+3. Development
+4. Testing
+5. Deployment
+Each stage helped ensure the game was user-friendly and enjoyable.
+### 1. Discovery Phase
 ### My Goals:
 - Make the game easy to use and understand.
 - Ensure instructions and messages are clear.
@@ -25,17 +31,33 @@ To create a fun and engaging Hangman game, I divided the project into several st
 - Easily follow the game information.
 - Interact with the game without issues.
 - Guess (new) words faster. 
-### Planning
+### 2. Planning
 - Plan the basic logic of the Hangman game.
 - Outline the structure of the Python code needed for the game.
-- Create a rough blueprint for the logic.
-### Development Phase
+- Create a rough blueprint for the logic:
+![Flow Chart](https://github.com/Tbergius/hangman/blob/main/assets/hangman_bp.png)
+### 3. Development Phase
 A detailed plan was created to guide the game's development. Adjustments were made to improve user experience and address any issues. Every step was tested to be sure it was working, before resuming with the next stage. During working on this, the blueprint was adjusted and refined as well. The code was written in Gitpod on the base of the Code Institude template.
-### Testing
-In addition to the above, every game step was tested once deployed. Wrong replies were given, such as numbers, multiple letters, words, gibberish. 
+### 4. Testing
+In addition to the above testing while coding, every game step was tested once deployed. Wrong replies were given, such as numbers, multiple letters, words, gibberish. 
 The code was checked via the online PEP8 checker from Code Institude. During the test a heap of inconsitansies such as no double line breaks, and user text that extends the broder of the terminal was found, and adjusted.
 Also ran it through ExtendsClass Python syntax checker for syntax errors, this came back all good.
-### Deployment
+
+Examples of testing during coding:
+- Line 31, the leading " was at the wrong spot, it should have been after the opening (. This was fixed
+![Error comma image](https://github.com/Tbergius/hangman/blob/main/assets/wrong_place_comma.png)
+
+- Writing by hand, instead of copying, can result in code not working. Such a using display_word instead of display_words
+![Typo image](https://github.com/Tbergius/hangman/blob/main/assets/typo_words.png)
+
+- PEP8 Python Validator Results
+![PEP8 Python Validator results](https://github.com/Tbergius/hangman/blob/main/assets/ci_pep.png)
+
+2. ExtendsClass Python syntax checker
+![ExtendsClass Python syntax checker results](https://github.com/Tbergius/hangman/blob/main/assets/extendsclass.png)
+
+
+### 5. Deployment
 For the coding in Gitpod, and hosting on Heroku
 ### To load the project in Gitpod, please follow these steps:
 
@@ -56,4 +78,10 @@ For the coding in Gitpod, and hosting on Heroku
 
 ## Credits
 ### Tools used:
-Github
+Github - for pushing the code
+Gitpod - for writing the code
+Code Institude template - To start with the base of writing the code and have the basic programs and files
+Python - the language of this project
+Heroku - to deploy the working program
+Code Institude PEP8 validator - check python code and deployability on Heroku
+ExtendsClass Python syntax check - check the Python code syntax (Python 3), and find Python errors

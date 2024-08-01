@@ -37,7 +37,10 @@ def get_user_input(guessed_letters):
         guess = input("Guess a letter: ").lower()
         if len(guess) == 1 and guess.isalpha() and guess not in guessed_letters:
             return guess
-        print("Invalid input. Please enter a not used before single letter.")
+        print(
+            "Oops, that is not a valid input!\n" 
+            "Please enter only a single letter that\n"
+            "you have not tried before :) \n")
 
 
 def display_instructions():
