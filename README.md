@@ -3,7 +3,7 @@
 ## Introduction
 Thank you for viewing my third project from the Full Stack Developer course. This time I will take you along Hangman, a command line based game created with Python.
 This README will give you some more insights on my journey.
-You can find the live link here: 
+- You can find the live link here: 
 ## Hangman Idea
 For this project I wanted to create a game, and I picked a word guessing game as it came close to something else I am learning: a new language. Not coding, but the Bulgarian language. As I am far from speaking it, I made it English only. 
 
@@ -35,7 +35,7 @@ Each stage helped ensure the game was user-friendly and enjoyable.
 - Plan the basic logic of the Hangman game.
 - Outline the structure of the Python code needed for the game.
 - Create a rough blueprint for the logic:
-![Flow Chart](https://github.com/Tbergius/hangman/blob/main/assets/hangman_bp.png)
+- ![Flow Chart](https://github.com/Tbergius/hangman/blob/main/assets/hangman_bp.png)
 ### 3. Development Phase
 A detailed plan was created to guide the game's development. Adjustments were made to improve user experience and address any issues. Every step was tested to be sure it was working, before resuming with the next stage. During working on this, the blueprint was adjusted and refined as well. The code was written in Gitpod on the base of the Code Institude template.
 ### 4. Testing
@@ -78,10 +78,10 @@ For the coding in Gitpod, and hosting on Heroku
 
 ## Credits
 ### Tools used:
-Github - for pushing the code
-Gitpod - for writing the code
-Code Institude template - To start with the base of writing the code and have the basic programs and files
-Python - the language of this project
-Heroku - to deploy the working program
-Code Institude PEP8 validator - check python code and deployability on Heroku
-ExtendsClass Python syntax check - check the Python code syntax (Python 3), and find Python errors
+[**GitHub**](https://github.com/) - for pushing the code
+[**Gitpod**](https://gitpod.io/) - for writing the code
+[**Code Institude template**](https://github.com/Code-Institute-Org/python-essentials-template)- To start with the base of writing the code and have the basic programs and files
+[**Python**](https://en.wikipedia.org/wiki/Python_(programming_language)) - the language of this project
+[**Heroku**](https://www.heroku.com/) - to deploy the working program
+[**Code Institude PEP8 validator**](https://pep8ci.herokuapp.com/) - check python code and deployability on Heroku
+[**ExtendsClass Python syntax check**](https://extendsclass.com/python-tester.html) - check the Python code syntax (Python 3), and find Python errors
