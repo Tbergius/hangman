@@ -96,7 +96,8 @@ def main():
             print("Wordlist missing. Ensure 'words.txt' is in same directory.")
             break
         if input("Play again? (y/n): ").lower() != 'y':
-            break
+            print("Thank you for playing, do join again!")
+            return
 
 
 if __name__ == "__main__":
