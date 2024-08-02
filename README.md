@@ -54,7 +54,26 @@ Examples of testing during coding:
 ![Typo image](https://github.com/Tbergius/hangman/blob/main/assets/typo_words.png)
 
 ### 8.1 Test cases
+The following manual tests were performed to check user input:
 
+- enter letter 
+![enter letter image](https://github.com/Tbergius/hangman/blob/main/assets/enter_letter.png)
+- enter letter until correct one
+![enter letter until correct one image](https://github.com/Tbergius/hangman/blob/main/assets/enter_correct_letter.png)
+- enter number
+![enter number image](https://github.com/Tbergius/hangman/blob/main/assets/assets/enter_number.png)
+- enter two letters
+![enter two letters image](https://github.com/Tbergius/hangman/blob/main/assets/enter_two_letters.png)
+- enter word
+![enter word image](https://github.com/Tbergius/hangman/blob/main/assets/typo_words.png)
+- enter symbol
+![Tyenter symbolpo image](https://github.com/Tbergius/hangman/blob/main/assets/enter_symbol.png)
+- enter guessed before letter
+![enter guessed before letter image](https://github.com/Tbergius/hangman/blob/main/assets/enter_guessed_before.png)
+- enter y to play again
+![enter y to play again image](https://github.com/Tbergius/hangman/blob/main/assets/join_again_yes.png)
+- enter n to not play again 
+![enter n to not play again image](https://github.com/Tbergius/hangman/blob/main/assets/join_again_no.png)
 
 ### 8.2 Code Validation
 The code was checked via the online PEP8 checker from Code Institude. During the test a heap of inconsitansies such as no double line breaks, and user text that extends the broder of the terminal was found, and adjusted.
@@ -87,3 +106,9 @@ For the coding in Gitpod, and hosting on Heroku
 - Manually deploy the Main branch, launch the application
 
 ## 10. Credits
+Overall I enjoyed working on this project! I liked the logical behaviour a lot. 
+Special thanks here for Damian, [**his GitHub page can be found here**](https://github.com/DamianGillessen1989), for keeping me motivated and on my toes by keep asking how far along I am. In addition his comments on changes were helpfull and needed for a fresh look!
+
+The Code institude template (linked above), without this the project would take a lot more time.
+
+And finaly my mentor Rohit for his usefull comments on how to make my project better!
