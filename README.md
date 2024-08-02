@@ -43,6 +43,7 @@ A detailed plan was created to guide the game's development. Adjustments were ma
 - [**Heroku**](https://www.heroku.com/) - To deploy the working program
 - [**Code Institude PEP8 validator**](https://pep8ci.herokuapp.com/) - To check python code and deployability on Heroku
 - [**ExtendsClass Python syntax check**](https://extendsclass.com/python-tester.html) - To check the Python code syntax (Python 3), and find Python errors
+- [**draw.io**](https://app.diagrams.net/) - For creating the blueprint
 
 ## 8. Testing
 Testing was done throughout coding of the project. Wrong replies were given, such as numbers, multiple letters, words, gibberish. 
@@ -56,23 +57,23 @@ Examples of testing during coding:
 ### 8.1 Test cases
 The following manual tests were performed to check user input:
 
-- enter letter 
+- enter letter<br>
 ![enter letter image](https://github.com/Tbergius/hangman/blob/main/assets/enter_letter.png)
-- enter letter until correct one
+- enter letter until correct one<br>
 ![enter letter until correct one image](https://github.com/Tbergius/hangman/blob/main/assets/enter_correct_letter.png)
-- enter number
-![enter number image](https://github.com/Tbergius/hangman/blob/main/assets/assets/enter_number.png)
-- enter two letters
+- enter number<br>
+![enter number image](https://github.com/Tbergius/hangman/blob/main/assets/enter_number.png)
+- enter two letters<br>
 ![enter two letters image](https://github.com/Tbergius/hangman/blob/main/assets/enter_two_letters.png)
-- enter word
-![enter word image](https://github.com/Tbergius/hangman/blob/main/assets/typo_words.png)
-- enter symbol
+- enter word<br>
+![enter word image](https://github.com/Tbergius/hangman/blob/main/assets/enter_word.png)
+- enter symbol<br>
 ![Tyenter symbolpo image](https://github.com/Tbergius/hangman/blob/main/assets/enter_symbol.png)
-- enter guessed before letter
+- enter guessed before letter<br>
 ![enter guessed before letter image](https://github.com/Tbergius/hangman/blob/main/assets/enter_guessed_before.png)
-- enter y to play again
+- enter y to play again<br>
 ![enter y to play again image](https://github.com/Tbergius/hangman/blob/main/assets/join_again_yes.png)
-- enter n to not play again 
+- enter n to not play again<br>
 ![enter n to not play again image](https://github.com/Tbergius/hangman/blob/main/assets/join_again_no.png)
 
 ### 8.2 Code Validation
