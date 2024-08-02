@@ -34,7 +34,7 @@ def get_user_input(guessed_letters):
         str: A valid guessed letter.
     """
     while True:
-        guess = input("Guess a letter: ").lower()
+        guess = input("Guess a letter: ").lower().strip()
         if len(guess) == 1 and guess.isalpha() \
                 and guess not in guessed_letters:
             return guess
