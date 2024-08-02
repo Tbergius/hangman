@@ -35,10 +35,11 @@ def get_user_input(guessed_letters):
     """
     while True:
         guess = input("Guess a letter: ").lower()
-        if len(guess) == 1 and guess.isalpha() and guess not in guessed_letters:
+        if len(guess) == 1 and guess.isalpha() \
+                and guess not in guessed_letters:
             return guess
         print(
-            "Oops, that is not a valid input!\n" 
+            "Oops, that is not a valid input!\n"
             "Please enter only a single letter that\n"
             "you have not tried before :) \n")
 
@@ -67,7 +68,8 @@ def play_game():
     print(f"The word has {len(word)} letters.")
     display_word(word, guessed_letters)
 
-    while len(incorrect_guesses) < max_attempts and not set(word).issubset(guessed_letters):
+    while len(incorrect_guesses) < max_attempts \
+            and not set(word).issubset(guessed_letters):
         guess = get_user_input(guessed_letters | incorrect_guesses)
         if guess in word:
             guessed_letters.add(guess)
